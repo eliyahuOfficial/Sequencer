@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+:root {
+    --bg-color: linear-gradient(to bottom, rgba(165, 162, 162, 0.3) 15%, rgba(121, 121, 121, 0.7) 85%, #5c5b5b 100%);
+    --second-bg-color: #cac6c6;
+    --two-color: #b5a168;
+    --contact-color: #fff1f1;
+    --text-color: #2a2a2a;
+    --second-color: #202020;
+    --second-main-color: rgb(128, 131, 133);
+    --main-color: linear-gradient(to bottom, rgba(214, 205, 205, 0.3) 15%, rgba(121, 121, 121, 0.7)) 85%, #a3a3a3;
+    --btn-color: linear-gradient(to bottom, rgba(233, 232, 191, 0.3) 15%, #b5a168 85%, #a09064);
+    --big-font: 4rem;
+    --p-font: 1.1rem;
+}
+
+body {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/master.jpg);
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 4000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 3750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 4000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 3750px;
+    }
+
+}
+
+section {
+    padding: 0px 15% 120px;
+
+}
+
+h1 {
+
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, .01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    font-size: var(--big-font);
+
+
+}
+
+span {
+    color: var(--two-color);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+
+p {
+    margin: 0.5rem;
+    text-align: center;
+    animation: fadeIn 5s ease-in-out
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.homeControl {
+
+    margin: 1rem 1rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    border: 3px solid var(--second-bg-color);
+    border-radius: 10px;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 60px;
+    background: var(--btn-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    transition: scale(0.9);
+    color: var(--second-main-color);
+    background-color: var(--text-color);
+}
+
+
+input[type=range] {
+
+    -webkit-appearance: none;
+
+    -moz-apperance: none;
+
+    appearance: none;
+
+    background-color: var(--two-color);
+
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+
+    height: 20px;
+    border-radius: 50%;
+
+    background: var(--main-color);
+
+    cursor: pointer;
+}
+
+.sequence_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+select {
+    border: 1px solid var(--two-color);
+    box-shadow: 1px 2px 25px var(--second-bg-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.synthesis {
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
